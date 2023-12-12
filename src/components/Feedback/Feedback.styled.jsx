@@ -19,7 +19,7 @@ width: 100px;
 height: 40px;
 background-color: ${props=>props.name==="good"? "green":props.name==="neutral"?"yellow":"red"};
 
-&:hover {
+&:hover, &:focus {
   background-color: lightblue;  
   cursor: pointer;
 }
