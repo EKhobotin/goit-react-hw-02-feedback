@@ -1,5 +1,4 @@
-import React, {Сomponent} from "react";
-import { Component } from "react";
+import React, { Component } from "react";
 import { Feedback } from "./Feedback/Feedback";
 import { Statistic } from "./Statistic/Statistic";
 
