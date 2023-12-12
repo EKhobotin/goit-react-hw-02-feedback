@@ -2,17 +2,20 @@ import React, { Component } from "react";
 import {StatisticWrap,StatisticItem } from "./Statistic.styled";
 
 export class Statistic extends Component {
-
+    
     render() {
-        return (<StatisticWrap>Statistics
-            <StatisticItem>Good:
-                <span>1</span>
+        const {good, neutral, bad, total, positiveFeedback} =this.props      
+   
+        return (<StatisticWrap>
+            <StatisticItem $good={good}>Good: <span>{good}</span>
             </StatisticItem>
-            <StatisticItem>Neutral:
-                <span>2</span>
+            <StatisticItem $neutral={neutral}>Neutral: <span>{neutral}</span>
             </StatisticItem>
-            <StatisticItem>Bad:
-                <span>3</span>
+            <StatisticItem $bad={bad}>Bad: <span>{bad}</span>
+            </StatisticItem>
+            <StatisticItem $total={total}>Total: <span>{total}</span>
+            </StatisticItem>
+            <StatisticItem $positiveFeedback={positiveFeedback}>Positive feedback: <span>{positiveFeedback}%</span>
             </StatisticItem>
         </StatisticWrap>)
         
